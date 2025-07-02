@@ -3037,7 +3037,7 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "MCU - ESP33"
+	(text "MCU - ESP32\n"
 		(exclude_from_sim no)
 		(at 185.928 14.732 0)
 		(effects
@@ -4485,28 +4485,6 @@
 			)
 		)
 	)
-	(global_label "PWM1_DATA"
-		(shape input)
-		(at 203.2 45.72 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "91e66157-e37d-4003-b40f-32f81467e344")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 189.4501 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "NEOPIXEL1_DATA_3V3"
 		(shape input)
 		(at 115.57 87.63 180)
@@ -4529,29 +4507,29 @@
 			)
 		)
 	)
-	(global_label "NEOPIXEL1_DATA_3V3"
+	(global_label "NEOPIXEL1_PWR_DPIN_3V3"
 		(shape input)
-		(at 257.81 53.34 0)
+		(at 203.2 45.72 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
-		(uuid "a8bf6911-779a-4042-bfea-a0f79f3d904e")
+		(uuid "a6763e11-3b7e-4f3e-93e6-6ac3e963cc52")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 280.9337 53.34 0)
+			(at 175.0568 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 				(hide yes)
 			)
 		)
 	)
-	(global_label "NEOPIXEL1_PWR_DPIN_3V3"
+	(global_label "NEOPIXEL1_DATA_3V3"
 		(shape input)
 		(at 204.47 49.53 180)
 		(fields_autoplaced yes)
@@ -4561,9 +4539,9 @@
 			)
 			(justify right)
 		)
-		(uuid "a9c8503e-b6fc-4050-bbfc-b417b71ab9ac")
+		(uuid "adddac38-c42b-40a4-9611-b50806f98b59")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 176.3268 49.53 0)
+			(at 181.3463 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4586,6 +4564,28 @@
 		(uuid "ba91df5c-4b35-4139-b39b-3fc37755fb80")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 171.4113 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "PWM1_DATA"
+		(shape input)
+		(at 257.81 53.34 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "fbdf9c4f-c92c-4b25-a33d-48535a875498")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 271.5599 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5304,7 +5304,7 @@
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
-		(on_board yes)
+		(on_board no)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "45d134fe-637d-4d48-acfc-3039b8f3e725")
@@ -5375,7 +5375,7 @@
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
-		(on_board yes)
+		(on_board no)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "46444d30-a750-402a-b521-8b478f900e72")
@@ -5445,7 +5445,7 @@
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
-		(on_board yes)
+		(on_board no)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "52c73651-0e10-41da-9785-fce88e5589a7")
@@ -5515,7 +5515,7 @@
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
-		(on_board yes)
+		(on_board no)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5867e9cc-3d3b-4d67-a31e-cdc6d3cf816b")
@@ -6061,7 +6061,7 @@
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
-		(on_board yes)
+		(on_board no)
 		(dnp no)
 		(uuid "a0df978b-f647-45cb-b2be-5372ff8d68bd")
 		(property "Reference" "#PWR02"
@@ -6458,76 +6458,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_Small")
-		(at 241.3 133.35 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "b7ff7358-229d-4628-9070-320244aca890")
-		(property "Reference" "R1"
-			(at 243.84 132.0799 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "R_Small"
-			(at 243.84 134.6199 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
-			(at 241.3 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 241.3 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor, small symbol"
-			(at 241.3 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "92e354f2-4a17-4c8d-9b89-f7b48c3754db")
-		)
-		(pin "2"
-			(uuid "3ebdff71-f7a4-4aa6-85d4-d220ea5c7e0a")
-		)
-		(instances
-			(project ""
-				(path "/d2d38338-08e5-4e30-a0a2-fb1dbe6e0d27"
-					(reference "R1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+5V")
 		(at 132.08 74.93 0)
 		(unit 1)
@@ -6588,76 +6518,6 @@
 			(project ""
 				(path "/d2d38338-08e5-4e30-a0a2-fb1dbe6e0d27"
 					(reference "#PWR011")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Small")
-		(at 260.35 132.08 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "c666772c-1f6e-4193-88f8-6bf811d0be3d")
-		(property "Reference" "C1"
-			(at 262.89 130.8162 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "0.1uf"
-			(at 262.89 133.3562 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
-			(at 260.35 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 260.35 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 260.35 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "dbd5656a-cc71-41fe-b7a3-4bb250d94ca4")
-		)
-		(pin "1"
-			(uuid "f08826ac-c795-4537-916b-5298a1520f98")
-		)
-		(instances
-			(project ""
-				(path "/d2d38338-08e5-4e30-a0a2-fb1dbe6e0d27"
-					(reference "C1")
 					(unit 1)
 				)
 			)
@@ -6829,7 +6689,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Seeed Studio XIAO Series Library:XIAO-ESP32C3-DIP"
+		(property "Footprint" "Seeed Studio XIAO Series Library:XIAO-ESP32C3-SMD"
 			(at 223.52 48.26 0)
 			(effects
 				(font
@@ -7217,7 +7077,7 @@
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
-		(on_board yes)
+		(on_board no)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f8f14837-1750-4c06-bce2-f233cdef27b1")
